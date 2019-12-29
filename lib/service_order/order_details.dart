@@ -124,7 +124,7 @@ class _OrderDetailsState extends State<OrderDetails> {
           ),
           TextFormField(
             inputFormatters: <TextInputFormatter>[
-              LengthLimitingTextInputFormatter(12),
+              LengthLimitingTextInputFormatter(8),
               WhitelistingTextInputFormatter.digitsOnly,
               BlacklistingTextInputFormatter.singleLineFormatter,
             ],
@@ -135,7 +135,7 @@ class _OrderDetailsState extends State<OrderDetails> {
               helperText: '*opcional',
               prefixText: '(+55) 92 9 ',
             ),
-            keyboardType: TextInputType.text,
+            keyboardType: TextInputType.phone,
             textCapitalization: TextCapitalization.sentences,
           ),
           DropdownButtonFormField<String>(
